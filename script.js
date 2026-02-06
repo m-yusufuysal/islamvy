@@ -1064,6 +1064,15 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => { modal.style.display = "none"; }, 300);
         }
     });
+
+    // Check for modal query parameter (e.g., ?modal=privacy)
+    const urlParams = new URLSearchParams(window.location.search);
+    const modalParam = urlParams.get('modal');
+    if (modalParam) {
+        if (['privacy', 'terms', 'contact'].includes(modalParam)) {
+            openModal(modalParam);
+        }
+    }
 });
 
 function setLanguage(lang) {
