@@ -560,7 +560,7 @@ const translations = {
 
         // Mockup Content - FR
         mock_time: "09:41",
-        mock_date_full: "Mardi 27 Janvier",
+        mock_date_full: "Mardi 27 janvier",
         mock_location: "Paris, France",
         mock_timer_label: "TEMPS RESTANT",
         mock_timer_value: "00:47:57",
@@ -579,7 +579,7 @@ const translations = {
         mock_dream_pob: "Lieu de Naissance",
         mock_dream_button_new: "INTERPRÉTER MON RÊVE",
         mock_label_name: "Nom", mock_val_name: "Yusuf",
-        mock_label_dob: "Date de Naissance", mock_val_dob: "17 Déc 1996",
+        mock_label_dob: "Date de Naissance", mock_val_dob: "17 déc. 1996",
         mock_label_dream: "Votre Rêve", mock_placeholder_dream: "Décrivez votre rêve en détail...",
         mock_val_time: "17:45",
         mock_val_pob: "Istanbul, Turquie",
@@ -627,7 +627,7 @@ const translations = {
         mock_quran_subtitle: "Le Saint Coran",
         mock_verse_quran_1: "Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux.",
         mock_verse_quran_2: "Louange à Allah, Seigneur de l'univers.",
-        mock_hijri: "9 Cha'ban 1447 AH",
+        mock_hijri: "9 Cha'ban 1447 H",
         proof_badge: "AMOUR COMMUNAUTAIRE",
         proof_title: "Aimé par des Milliers",
         proof_subtitle: "Expériences de ceux qui ont entrepris un voyage spirituel avec Islamvy.",
