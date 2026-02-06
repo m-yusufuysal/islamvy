@@ -1069,7 +1069,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function setLanguage(lang) {
     if (!translations[lang]) lang = 'en';
     const currentLangText = document.getElementById('currentLang');
-    const langNames = { 'en': 'EN', 'tr': 'TR', 'ar': 'AR', 'id': 'ID' };
+    const langNames = { 'en': 'EN', 'tr': 'TR', 'ar': 'AR', 'id': 'ID', 'fr': 'FR' };
     if (currentLangText) currentLangText.textContent = langNames[lang];
     document.querySelectorAll('.lang-option').forEach(opt => {
         if (opt.getAttribute('data-lang') === lang) {

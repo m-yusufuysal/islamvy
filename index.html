@@ -802,10 +802,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            once: false, /* Refresh animation on scroll up */
-            mirror: true, /* Enable animation on scroll up */
-            offset: 100,
-            duration: 800,
+            once: true, /* Animate only once - Better Performance */
+            mirror: false, /* Disable mirror - Fixes Mobile Lag */
+            offset: 80,
+            duration: 700,
             easing: 'ease-out-cubic'
         });
     </script>

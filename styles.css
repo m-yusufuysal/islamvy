@@ -171,7 +171,8 @@ body {
     color: var(--text-primary);
     cursor: pointer;
     transition: var(--transition);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .lang-btn:hover {
@@ -196,7 +197,8 @@ body {
     visibility: hidden;
     transform: translateY(-10px);
     transition: var(--transition);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .lang-dropdown.active .lang-menu {
@@ -602,6 +604,7 @@ h1 {
     height: 680px;
     margin: 0 auto;
     perspective: 1000px;
+    will-change: transform;
 }
 
 /* End Base Wrapper */
