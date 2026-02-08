@@ -70,13 +70,23 @@
     -webkit-font-smoothing: antialiased;
 }
 
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    min-height: 100vh;
+}
+
 body {
     font-family: var(--font-body);
     background: var(--bg-gradient);
     color: var(--text-primary);
     line-height: 1.6;
-    overflow-x: hidden;
-    min-height: 100vh;
+    position: relative;
+    /* Ensure relative positioning for absolute children */
 }
 
 /* Swiss Minimal Pattern - Subtle Grid */
@@ -3961,6 +3971,14 @@ h1 {
 /* ============================================
    RTL LAYOUT FIXES (Arabic Support)
    ============================================ */
+
+[dir="rtl"] html,
+[dir="rtl"] body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
 
 [dir="rtl"] .word-day-card {
     border-left: none !important;

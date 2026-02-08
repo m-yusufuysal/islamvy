@@ -977,12 +977,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Check for lang query parameter first, then saved language or default to TR
-    const urlParamsLang = new URLSearchParams(window.location.search);
-    const langParam = urlParamsLang.get('lang');
-    const savedLang = langParam || localStorage.getItem('islamvy_lang') || 'tr';
-    setLanguage(savedLang);
-    renderReviews();
+    // --- Language Initialization Logic ---
+    initLanguage();
 
     // Handle Option Click
     langOptions.forEach(option => {
@@ -1020,7 +1016,7 @@ document.addEventListener('DOMContentLoaded', () => {
             modalTitle.innerText = termsTitles[lang] || termsTitles['en'];
             modalBody.innerHTML = termsContent[lang] || termsContent['en'];
         }
-        modal.style.display = "block";
+        modal.display = "block";
         setTimeout(() => modal.classList.add("show"), 10);
     }
 
@@ -1076,6 +1072,72 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+async function initLanguage() {
+    const urlParamsLang = new URLSearchParams(window.location.search);
+    const langParam = urlParamsLang.get('lang');
+    const savedLang = localStorage.getItem('islamvy_lang');
+
+    // 1. URL Parameter (Highest Priority)
+    if (langParam && translations[langParam]) {
+        setLanguage(langParam);
+        renderReviews();
+        return;
+    }
+
+    // 2. LocalStorage (User Preference)
+    if (savedLang && translations[savedLang]) {
+        setLanguage(savedLang);
+        renderReviews();
+        return;
+    }
+
+    // 3. Browser Language (System/Keyboard)
+    const browserLang = navigator.language.slice(0, 2);
+    if (translations[browserLang]) {
+        setLanguage(browserLang);
+        renderReviews();
+        // If browser lang is supported, we settle here to be fast.
+        // IP check is secondary fallback if browser lang is NOT supported or generic 'en'.
+        if (browserLang !== 'en') return;
+    }
+
+    // 4. IP Geolocation (Fallback / Detail)
+    try {
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        const country = data.country_code; // e.g., 'TR', 'AE', 'GB'
+
+        // Map Country to Language
+        const countryLangMap = {
+            'TR': 'tr',
+            'AE': 'ar', 'SA': 'ar', 'EG': 'ar', 'QA': 'ar', 'KW': 'ar', 'BH': 'ar', 'OM': 'ar', 'IQ': 'ar', 'JO': 'ar', 'LB': 'ar',
+            'ID': 'id', 'MY': 'id', // Malay/Indo are similar, default to ID for now
+            'FR': 'fr', 'BE': 'fr', 'SN': 'fr',
+            'GB': 'en', 'US': 'en', 'CA': 'en', 'AU': 'en'
+        };
+
+        const ipLang = countryLangMap[country];
+        if (ipLang && translations[ipLang]) {
+            // Only switch if we haven't already set a specific supported lang from browser
+            // OR if browser was generic 'en' and we found a more specific one (e.g. Arab user with EN browser).
+            // But to be safe and avoiding flip-flop, we only set if we are currently 'en' or unset.
+            const current = localStorage.getItem('islamvy_lang');
+            if (!current || current === 'en') {
+                setLanguage(ipLang);
+            }
+        } else if (!translations[browserLang]) {
+            // If neither browser nor IP gave a supported lang, default to English
+            setLanguage('en');
+        }
+    } catch (error) {
+        console.log('IP Location failed, defaulting to EN/Browser');
+        if (!translations[browserLang]) setLanguage('en');
+    }
+
+    // Ensure reviews are rendered in case we missed it
+    renderReviews();
+}
 
 function setLanguage(lang) {
     if (!translations[lang]) lang = 'en';
