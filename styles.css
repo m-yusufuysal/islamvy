@@ -70,15 +70,8 @@
     -webkit-font-smoothing: antialiased;
 }
 
-html {
-    background-color: #1E3E34;
-    min-height: 100vh;
-}
-
 body {
     font-family: var(--font-body);
-    background-color: #1E3E34;
-    /* Fallback */
     background: var(--bg-gradient);
     color: var(--text-primary);
     line-height: 1.6;
@@ -3968,8 +3961,6 @@ h1 {
 /* ============================================
    RTL LAYOUT FIXES (Arabic Support)
    ============================================ */
-
-
 
 [dir="rtl"] .word-day-card {
     border-left: none !important;

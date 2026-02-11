@@ -8,7 +8,7 @@ const translations = {
         feat_prayer_desc: "Align your day with precise, location-based prayer times and gentle reminders.",
         feat_quran_title: "Sacred Recitation",
         feat_quran_desc: "Immerse yourself in the Holy Quran with elegant typography and world-class audio.",
-        feat_dhikr_title: "Mindful Dhikr",
+        feat_dhikr_title: "Mindful Dhikr & Dua",
         feat_dhikr_desc: "A digital Tasbih that adapts to you. Personalized spiritual goals and focus-enhancing dhikrs based on your name, birth date, and current situation/intention.",
         feat_dream_title: "Personalized Dream Interpretation",
         feat_dream_desc: "Decipher the messages in your sleep. Get special interpretations for your dreams, tailored to your path, in the light of Islamic interpretations with AI layers.",
@@ -74,7 +74,7 @@ const translations = {
         mock_dhikr_title: "Dhikr Counter",
         mock_dhikr_subtitle: "Count your own dhikr",
         mock_dhikr_or: "OR",
-        mock_dhikr_main_title: "Dhikr",
+        mock_dhikr_main_title: "Dhikr & Dua",
         mock_dhikr_main_desc: "Discover your special dhikr based on your intention, birth time and state with AI.",
         mock_dhikr_intention: "Your Intention / State",
         mock_dhikr_placeholder_intent: "What does your heart need today? (The more detail you provide, the more personalized and comprehensive your prescription will be.)",
@@ -83,14 +83,14 @@ const translations = {
         mock_comm_title: "Spiritual Community",
         mock_comm_all: "All",
         mock_comm_dua: "Prayer",
-        mock_comm_zikir: "Dhikr",
+        mock_comm_zikir: "Dhikr & Dua",
         mock_comm_hatim: "Hatim",
         mock_comm_hatim_invite: "INVITE TO HATIM GROUP",
         mock_comm_hatim_kolektif: "COLLECTIVE HATIM",
         mock_comm_hatim_text: "I am starting a hatim for before Ramadan. You can join for intercession and forgiveness.",
         mock_comm_dua_req: "PRAYER REQUEST",
         mock_comm_dua_text: "I am getting married, I need prayers. I ask for your prayers for it to be auspicious.",
-        mock_comm_zikir_req: "DHIKR REQUEST",
+        mock_comm_zikir_req: "DHIKR & DUA REQUEST",
         mock_comm_zikir_text: "We have a patient, would you please join the dhikr... Ya Shafi",
         mock_comm_share: "Share",
         mock_comm_report: "Report",
@@ -122,7 +122,7 @@ const translations = {
         proof_subtitle: "Experiences of those who embarked on a spiritual journey with Islamvy.",
         mock_comm_hatim_title: "I am starting a hatim for before Ramadan",
         mock_comm_dua_title: "I am getting married, I need prayers",
-        mock_comm_zikir_title: "We have a patient, would you please join the dhikr...",
+        mock_comm_zikir_title: "We have a patient, would you please join the dhikr and dua...",
         mock_comm_zikir_sub: "Ya Shafi",
         footer_copyright: "© 2026 Islamvy App. All rights reserved."
     },
@@ -135,8 +135,8 @@ const translations = {
         feat_prayer_desc: "Günlerinizi, konumunuza özel hassas namaz vakitleri ve nazik hatırlatmalarla taçlandırın.",
         feat_quran_title: "Kutsal Kıraat",
         feat_quran_desc: "Zarif hat sanatı ve huzur veren tilavetlerle Kuran-ı Kerim'in derinliklerine dalın.",
-        feat_dhikr_title: "Bilinçli Zikir",
-        feat_dhikr_desc: "Size uyum sağlayan dijital tesbih. İsminize, doğum tarihinize ve yaşadığınız güncel durum/niyetinize göre özel manevi hedefler ve odaklanmanızı sağlayan zikirler.",
+        feat_dhikr_title: "Bilinçli Zikir & Dua",
+        feat_dhikr_desc: "Size özel hazırlanan esmalar. İsminiz, doğum verileriniz ve niyetinize göre odaklanmanıza yardımcı olan manevi hedefler ve zikirler.",
         feat_dream_title: "Sana Özel Rüya Yorumu",
         feat_dream_desc: "Uykunuzdaki mesajları çözün. Rüyalarınız için sizin yolunuza özel, İslami tabirler ışığı altında yapay zeka katmanlarıyla özel yorumlar alın.",
         cta_title: "Yolculuğunuza Bugün Başlayın",
@@ -202,7 +202,7 @@ const translations = {
         mock_dhikr_title: "Zikirmatik",
         mock_dhikr_subtitle: "Kendi zikrini çek",
         mock_dhikr_or: "VEYA",
-        mock_dhikr_main_title: "Zikir",
+        mock_dhikr_main_title: "Zikir & Dua",
         mock_dhikr_main_desc: "Yapay zeka ile niyetinize, doğum saatinize ve halinize özel esmanızı keşfedin",
         mock_dhikr_intention: "Niyetiniz / hâliniz",
         mock_dhikr_placeholder_intent: "Bugün kalbiniz neye ihtiyaç duyuyor? (Niyetinizi ne kadar detaylı anlatırsanız, reçeteniz o kadar size özel ve kapsamlı olur.)",
@@ -211,15 +211,15 @@ const translations = {
         mock_comm_title: "Manevi Topluluk",
         mock_comm_all: "Tümü",
         mock_comm_dua: "Dua",
-        mock_comm_zikir: "Zikir",
+        mock_comm_zikir: "Zikir & Dua",
         mock_comm_hatim: "Hatim",
         mock_comm_hatim_invite: "HATİM GRUBUNA DAVET",
         mock_comm_hatim_kolektif: "KOLEKTİF HATİM",
         mock_comm_hatim_text: "Ramazan öncesi için hatim başlatıyorum. Şefaat ve af için katılabilirsiniz.",
         mock_comm_dua_req: "DUA İSTEĞİ",
         mock_comm_dua_text: "Evleneceğim dua lazım. Hayırlı olması için dua istiyorum sizden.",
-        mock_comm_zikir_req: "ZİKİR TALEBİ",
-        mock_comm_zikir_text: "Hastamız var zikre katılır mısınız lütfen ... Ya Şafi",
+        mock_comm_zikir_req: "ZİKİR & DUA TALEBİ",
+        mock_comm_zikir_text: "Hastamız var zikre katılır mısınız lütfen ... Ya Shafi",
         mock_comm_share: "Paylaş",
         mock_comm_report: "Şikayet Et",
         mock_comm_open: "Katılıma Açık",
@@ -250,8 +250,8 @@ const translations = {
         proof_subtitle: "Islamvy ile manevi yolculuğa çıkanların deneyimleri.",
         mock_comm_hatim_title: "Ramazan öncesi için hatim başlatıyorum",
         mock_comm_dua_title: "Evleneceğim dua lazım",
-        mock_comm_zikir_title: "Hastamız var zikre katılır mısınız lütfen ...",
-        mock_comm_zikir_sub: "Ya Şafi",
+        mock_comm_zikir_title: "Hastamız var zikre ve duaya katılır mısınız lütfen ...",
+        mock_comm_zikir_sub: "Ya Shafi",
         footer_copyright: "© 2026 Islamvy App. Tüm hakları saklıdır."
     },
     ar: {
@@ -263,8 +263,8 @@ const translations = {
         feat_prayer_desc: "حساب تلقائي يعتمد على الموقع مع إشعارات موثوقة.",
         feat_quran_title: "قرآن غامر",
         feat_quran_desc: "اقرأ بسهولة، استمع إلى تلاوات جميلة، وتتبع تقدمك.",
-        feat_dhikr_title: "الذكر الواعي",
-        feat_dhikr_desc: "مسبحة رقمية تتكيف معك. أهداف روحية خاصة وأذكار تساعدك على التركيز بناءً على اسمك وتاريخ ميلadك ووضعك/نيتك الحالية.",
+        feat_dhikr_title: "الذكر والدعاء",
+        feat_dhikr_desc: "مسبحة رقمية تتكيف معك. أهداف روحية خاصة وأذكار تساعدك على التركيز بناءً على اسمك وتاريخ ميلادك ووضعك/نيتك الحالية.",
         feat_dream_title: "تفسير أحلام خاص بك",
         feat_dream_desc: "فك رموز الرسائل في نومك. احصل على تفسيرات خاصة لأحلامك، مصممة لمسارك، في ضوء التفسيرات الإسلامية مع طبقات الذكاء الاصطناعي.",
         cta_title: "ابدأ رحلتك اليوم",
@@ -391,7 +391,7 @@ const translations = {
         feat_prayer_desc: "Perhitungan otomatis berbasis lokasi dengan notifikasi terpercaya.",
         feat_quran_title: "Quran Imersif",
         feat_quran_desc: "Baca dengan mudah, dengarkan tilawah indah, dan lacak kemajuanmu.",
-        feat_dhikr_title: "Dzikir Sadar",
+        feat_dhikr_title: "Dzikir Sadar & Doa",
         feat_dhikr_desc: "Tasbih digital yang beradaptasi dengan Anda. Target spiritual khusus dan dzikir yang membantu fokus berdasarkan nama, tanggal lahir, dan situasi/niat Anda saat ini.",
         feat_dream_title: "Tafsir Mimpi Khusus Anda",
         feat_dream_desc: "Pecahkan pesan dalam tidur Anda. Dapatkan interpretasi khusus untuk mimpi Anda, sesuai dengan jalan Anda, di bawah cahaya tafsir Islami dengan lapisan AI.",
@@ -458,7 +458,7 @@ const translations = {
         mock_dhikr_title: "Penghitung Dzikir",
         mock_dhikr_subtitle: "Hitung dzikir Anda sendiri",
         mock_dhikr_or: "ATAU",
-        mock_dhikr_main_title: "Dhikr",
+        mock_dhikr_main_title: "Dzikir & Doa",
         mock_dhikr_main_desc: "Temukan dzikir khusus Anda berdasarkan niat, waktu lahir, dan keadaan Anda dengan AI.",
         mock_dhikr_intention: "Niat / Keadaan Anda",
         mock_dhikr_placeholder_intent: "Apa yang dibutuhkan hati Anda hari ini? (Semakin detail Anda menjelaskannya, semakin personal dan komprehensif resep Anda.)",
@@ -467,7 +467,7 @@ const translations = {
         mock_comm_title: "Komunitas Spiritual",
         mock_comm_all: "Semua",
         mock_comm_dua: "Doa",
-        mock_comm_zikir: "Dzikir",
+        mock_comm_zikir: "Dzikir & Doa",
         mock_comm_hatim: "Khatam",
         mock_comm_hatim_invite: "UNDANGAN GRUP KHATAM",
         mock_comm_hatim_kolektif: "KHATAM KOLEKTIF",
@@ -519,7 +519,7 @@ const translations = {
         feat_prayer_desc: "Alignez votre journée avec des horaires de prière précis basés sur la localisation et des rappels doux.",
         feat_quran_title: "Lecture Sacrée",
         feat_quran_desc: "Plongez dans le Saint Coran avec une typographie élégante et un son de classe mondiale.",
-        feat_dhikr_title: "Dhikr Conscient",
+        feat_dhikr_title: "Dhikr Conscient & Invocations",
         feat_dhikr_desc: "Un Tasbih numérique qui s'adapte à vous. Objectifs spirituels personnalisés et dhikrs favorisant la concentration basés sur votre nom, date de naissance, et situation/intention actuelle.",
         feat_dream_title: "Interprétation de Rêves Personnalisée",
         feat_dream_desc: "Déchiffrez les messages de votre sommeil. Obtenez des interprétations spéciales pour vos rêves, adaptées à votre chemin, à la lumière des interprétations islamiques avec des couches d'IA.",
@@ -586,7 +586,7 @@ const translations = {
         mock_dhikr_title: "Compteur de Dhikr",
         mock_dhikr_subtitle: "Comptez votre propre dhikr",
         mock_dhikr_or: "OU",
-        mock_dhikr_main_title: "Dhikr",
+        mock_dhikr_main_title: "Dhikr & Invocations",
         mock_dhikr_main_desc: "Découvrez votre dhikr spécial basé sur votre intention, heure de naissance et état avec l'IA.",
         mock_dhikr_intention: "Votre Intention / État",
         mock_dhikr_placeholder_intent: "De quoi votre cœur a-t-il besoin aujourd'hui? (Plus vous fournissez de détails, plus votre prescription sera personnalisée et complète.)",
@@ -594,7 +594,7 @@ const translations = {
         mock_comm_title: "Communauté Spirituelle",
         mock_comm_all: "Tout",
         mock_comm_dua: "Prière",
-        mock_comm_zikir: "Dhikr",
+        mock_comm_zikir: "Dhikr & Invocations",
         mock_comm_hatim: "Hatim",
         mock_comm_hatim_invite: "INVITATION GROUPE HATIM",
         mock_comm_hatim_kolektif: "HATIM COLLECTIF",
@@ -977,17 +977,83 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Language Initialization Logic ---
+    // Initialize Language with Detection Logic
     initLanguage();
+    renderReviews();
 
     // Handle Option Click
     langOptions.forEach(option => {
         option.addEventListener('click', () => {
             const lang = option.getAttribute('data-lang');
             setLanguage(lang);
+            localStorage.setItem('islamvy_lang', lang); // Save manual choice
             langBtn.parentElement.classList.remove('active');
         });
     });
+
+    // ... Modal Logic ...
+    // (Rest of the previous code for modal logic continues here, 
+    //  but we need to make sure we don't break the scope. 
+    //  The original code had 'Handle Option Click' inside DOMContentLoaded. 
+    //  I will include the initLanguage function DEFINITION inside DOMContentLoaded or outside. 
+    //  Better to keep it cleanly separate.
+    //  Wait, the replacement block is inside DOMContentLoaded. 
+    //  I'll define initLanguage inside DOMContentLoaded for access to 'setLanguage' 
+    //  unless 'setLanguage' is global. 'setLanguage' is global (defined at line 1080).
+    //  So I can define initLanguage anywhere, but calling it must be inside.)
+
+    async function initLanguage() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        const savedLang = localStorage.getItem('islamvy_lang');
+
+        // 1. URL Parameter (Highest Priority)
+        if (urlLang && translations[urlLang]) {
+            setLanguage(urlLang);
+            return;
+        }
+
+        // 2. Saved Preference (User manually selected before)
+        if (savedLang && translations[savedLang]) {
+            setLanguage(savedLang);
+            return;
+        }
+
+        // 3. Browser Language (Fast Fallback)
+        const browserLang = navigator.language.slice(0, 2);
+        let currentLang = 'en'; // Default
+        if (translations[browserLang]) {
+            currentLang = browserLang;
+        }
+        setLanguage(currentLang); // Set immediately for fast TTI
+
+        // 4. IP Geolocation (Async Refinement)
+        try {
+            const response = await fetch('https://ipapi.co/json/');
+            if (!response.ok) throw new Error('IP Fetch failed');
+
+            const data = await response.json();
+            const country = data.country_code;
+
+            let ipLang = null;
+            if (country === 'TR') ipLang = 'tr';
+            else if (['SA', 'AE', 'EG', 'QA', 'KW', 'OM', 'BH', 'LB', 'JO', 'IQ', 'DZ', 'MA', 'TN', 'LY', 'SD'].includes(country)) ipLang = 'ar';
+            else if (country === 'ID') ipLang = 'id';
+            else if (country === 'FR') ipLang = 'fr';
+
+            // If we found a specific language for the country AND it's different from what we already set
+            if (ipLang && translations[ipLang] && ipLang !== currentLang) {
+                console.log(`Detected country: ${country}. Switching language to: ${ipLang}`);
+                setLanguage(ipLang);
+                // Optional: Save this as a preference so we don't fetch every time? 
+                // For now, let's NOT save it to localStorage automatically, 
+                // so we don't override if the user travels or uses VPN temporarily, 
+                // unless they manually confirm.
+            }
+        } catch (err) {
+            console.log('Auto-language detection skipped:', err);
+        }
+    }
 
     // --- Modal Logic ---
     const modal = document.getElementById("privacy-modal");
@@ -1016,7 +1082,7 @@ document.addEventListener('DOMContentLoaded', () => {
             modalTitle.innerText = termsTitles[lang] || termsTitles['en'];
             modalBody.innerHTML = termsContent[lang] || termsContent['en'];
         }
-        modal.display = "block";
+        modal.style.display = "block";
         setTimeout(() => modal.classList.add("show"), 10);
     }
 
@@ -1072,72 +1138,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-async function initLanguage() {
-    const urlParamsLang = new URLSearchParams(window.location.search);
-    const langParam = urlParamsLang.get('lang');
-    const savedLang = localStorage.getItem('islamvy_lang');
-
-    // 1. URL Parameter (Highest Priority)
-    if (langParam && translations[langParam]) {
-        setLanguage(langParam);
-        renderReviews();
-        return;
-    }
-
-    // 2. LocalStorage (User Preference)
-    if (savedLang && translations[savedLang]) {
-        setLanguage(savedLang);
-        renderReviews();
-        return;
-    }
-
-    // 3. Browser Language (System/Keyboard)
-    const browserLang = navigator.language.slice(0, 2);
-    if (translations[browserLang]) {
-        setLanguage(browserLang);
-        renderReviews();
-        // If browser lang is supported, we settle here to be fast.
-        // IP check is secondary fallback if browser lang is NOT supported or generic 'en'.
-        if (browserLang !== 'en') return;
-    }
-
-    // 4. IP Geolocation (Fallback / Detail)
-    try {
-        const response = await fetch('https://ipapi.co/json/');
-        const data = await response.json();
-        const country = data.country_code; // e.g., 'TR', 'AE', 'GB'
-
-        // Map Country to Language
-        const countryLangMap = {
-            'TR': 'tr',
-            'AE': 'ar', 'SA': 'ar', 'EG': 'ar', 'QA': 'ar', 'KW': 'ar', 'BH': 'ar', 'OM': 'ar', 'IQ': 'ar', 'JO': 'ar', 'LB': 'ar',
-            'ID': 'id', 'MY': 'id', // Malay/Indo are similar, default to ID for now
-            'FR': 'fr', 'BE': 'fr', 'SN': 'fr',
-            'GB': 'en', 'US': 'en', 'CA': 'en', 'AU': 'en'
-        };
-
-        const ipLang = countryLangMap[country];
-        if (ipLang && translations[ipLang]) {
-            // Only switch if we haven't already set a specific supported lang from browser
-            // OR if browser was generic 'en' and we found a more specific one (e.g. Arab user with EN browser).
-            // But to be safe and avoiding flip-flop, we only set if we are currently 'en' or unset.
-            const current = localStorage.getItem('islamvy_lang');
-            if (!current || current === 'en') {
-                setLanguage(ipLang);
-            }
-        } else if (!translations[browserLang]) {
-            // If neither browser nor IP gave a supported lang, default to English
-            setLanguage('en');
-        }
-    } catch (error) {
-        console.log('IP Location failed, defaulting to EN/Browser');
-        if (!translations[browserLang]) setLanguage('en');
-    }
-
-    // Ensure reviews are rendered in case we missed it
-    renderReviews();
-}
 
 function setLanguage(lang) {
     if (!translations[lang]) lang = 'en';
