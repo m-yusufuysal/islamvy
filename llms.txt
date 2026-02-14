@@ -3,7 +3,7 @@
 
 ## App Download
 - iOS App Store: https://apps.apple.com/app/islamvy
-- Google Play Store: https://play.google.com/store/apps/details?id=com.yusuf.islamvy
+- Google Play Store: https://play.google.com/store/apps/details?id=com.esat.islamvy
 
 ## Core Features
 - AI Dream Interpretation (based on Ibn Sirin & Islamic sources)
