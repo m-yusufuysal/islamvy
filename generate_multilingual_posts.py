@@ -11,7 +11,7 @@ from content_data import (
 
 def get_image_url(slug, cat_key):
     # Specific dream images
-    if "dream-snake" in slug: return "https://images.unsplash.com/photo-1555677284-6a6f971639e0?w=800&q=80" # Green Snake (Clearer)
+    if "dream-snake" in slug: return "/assets/images/dream-snake.png" # Generated Asset
     if "dream-water" in slug or "dream-sea" in slug: return "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&q=80" # Ocean/Water
     if "dream-gold" in slug or "dream-money" in slug: return "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=800&q=80" # Money/Gold
     if "dream-cat" in slug: return "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&q=80" # Cat
@@ -31,7 +31,7 @@ def get_image_url(slug, cat_key):
     if "dream-flying" in slug: return "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800&q=80" # Bird flying
     if "dream-prayer" in slug or "salah" in slug or "prayer" in slug or "worship" in cat_key:
         return "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80" # Mosque/Prayer
-    if "dream-prophet" in slug: return "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800&q=80" # Madinah Green Dome (Standard)
+    if "dream-prophet" in slug: return "/assets/images/dream-prophet.png" # Generated Asset
 
     # Generic category mappings
     if "dream" in slug:
@@ -124,7 +124,7 @@ POST_TEMPLATE = """<!DOCTYPE html>
     <div class="geometric-bg"></div>
     {navbar_html}
     <article class="post-container">
-        <div class="breadcrumbs"><a href="../../index.html">Blog</a> <span>/</span> {category}</div>
+        <div class="breadcrumbs"><a href="../index.html">Blog</a> <span>/</span> {category}</div>
         <header class="post-header">
             <span class="blog-category">{category}</span>
             <h1 class="post-title">{title}</h1>
